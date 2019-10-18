@@ -2,7 +2,7 @@ package domain.bikes;
 
 public class Bike {
 
-    private int id;
+    private Integer id;
     private String model;
 
     public Bike(int id, String model) {

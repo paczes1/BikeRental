@@ -2,14 +2,18 @@ package repositories;
 
 import domain.bikes.Bike;
 
-import java.util.List;
+import java.util.Map;
 
 public interface BikeRepository {
 
     void create(Bike bike);
-    List<Bike> readAll();
-    Bike read(Bike bikeId);
+
+    Map<Integer, Bike> readAll();
+
+    Bike read(Integer bikeId);
+
     void update(Bike bike);
-    void delete(Bike bikeId);
+
+    void delete(Bike bike);
 
 }
